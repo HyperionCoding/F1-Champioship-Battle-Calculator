@@ -131,8 +131,8 @@ void calculate(){
                         
                         // Calculate points for both
                         PointScenario scenario {
-                            i0.maxPoints_+i1.maxPoints_+i2.maxPoints_+i3.maxPoints_,
-                            i0.lewisPoints_+i1.lewisPoints_+i2.lewisPoints_+i3.lewisPoints_
+                            i0.maxPoints_+i1.maxPoints_+i2.maxPoints_+i3.maxPoints_+i4.maxPoints_,
+                            i0.lewisPoints_+i1.lewisPoints_+i2.lewisPoints_+i3.lewisPoints_+i4.lewisPoints_
                         };
                         // And add to total
                         PointScenario finalScenario {
@@ -174,9 +174,12 @@ int main()
     calculate();
 
     double totalScenarios = maxWinScenarios + lewisWinScenarios + drawScenarios;
-    std::cout << "No. win scenarios for Max: " << maxWinScenarios << "(" << (double)maxWinScenarios/totalScenarios*100 << "%)\n";
-    std::cout << "No. win scenarios for Lewis: " << lewisWinScenarios << "(" << (double)lewisWinScenarios/totalScenarios*100 << "%)\n";
-    std::cout << "No. draw scenarios: " << drawScenarios << "(" << (double)drawScenarios/totalScenarios*100 << "%)\n";
+    std::cout << "No. win scenarios for Max: " << maxWinScenarios << 
+    "(" << (double)maxWinScenarios/totalScenarios*100 << "%)\n";
+    std::cout << "No. win scenarios for Lewis: " << lewisWinScenarios << 
+    "(" << (double)lewisWinScenarios/totalScenarios*100 << "%)\n";
+    std::cout << "No. draw scenarios: " << drawScenarios << "(" << 
+    (double)drawScenarios/totalScenarios*100 << "%)\n";
 
     return 0;
 }
