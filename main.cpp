@@ -11,8 +11,8 @@
 #define HALF_POINTS
 #define CANCELLED_RACES
 
-const float maxPoints = 312.5;
-const float lewisPoints = 293.5;
+const float maxPoints = 332.5;
+const float lewisPoints = 318.5;
 
 float scoresystem[] = { 25, 18, 15, 12, 10, 8, 6, 4, 2, 1, 0 };
 float sprintsystem[] = { 3, 2, 1, 0 };
