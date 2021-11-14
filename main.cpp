@@ -24,7 +24,7 @@ struct PointScenario{
 };
 
 // Include sprint race
-const int NoRaces = 5;
+const int NoRaces = 3;
 
 unsigned long maxWinScenarios = 0;
 unsigned long lewisWinScenarios = 0;
